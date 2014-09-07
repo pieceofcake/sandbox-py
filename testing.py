@@ -7,11 +7,11 @@ class FirstTest(unittest.TestCase):
     
     def setUp(self):
         """Test env setup"""
-        print "Seting up the env"
+        print ("Seting up the env")
         
     def tearDown(self):
         """Clean up after test"""
-        print "Tearing down the env."
+        print ("Tearing down the env.")
         
     def test_1(self):
         """Passing test routine to run..."""
@@ -26,7 +26,7 @@ class FirstTest(unittest.TestCase):
 if __name__ == "__main__":
     fooSuite = unittest.TestLoader().loadTestsFromTestCase(FirstTest)
      
-    fooRunner = unittest.TextTestRunner(description = True)
+    fooRunner = unittest.TextTestRunner(description=True)
     fooRunner.run(fooSuite)
  
     
